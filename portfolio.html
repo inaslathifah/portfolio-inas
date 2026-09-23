@@ -1,223 +1,144 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inas Lathifah — Portfolio</title>
-    <meta name="description" content="Portfolio Inas Lathifah, lulusan Teknik Informatika yang bekerja di web development, mobile, dan UI/UX design.">
-    <link rel="icon" href="apple-touch-icon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Inas Lathifah</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="">
         <div class="nav-container">
-            <a href="#home" class="brand">Inas Lathifah</a>
-
-            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="navbar" aria-label="Buka menu navigasi">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav id="navbar" class="navbar">
-                <a href="#home">Beranda</a>
-                <a href="#ability">Keahlian</a>
-                <a href="#about">Tentang</a>
-                <a href="#projects">Proyek</a>
-                <a href="#contact">Kontak</a>
+            <h4>Inas Lathifah</h4>
+            <button onclick="btn()">☰</button>
+            <nav id="navbar" class="navbar nav-menu">
+                <a href="#home">Home</a>
+                <a href="#ability">Ability</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Home -->
-        <section id="home" class="hero">
-            <div class="hero-inner">
-                <div class="hero-text">
-                    <p class="hero-kicker">Web · Mobile · UI/UX</p>
-                    <h1>Halo, saya Inas Lathifah.</h1>
-                    <p class="hero-lead">Sarjana Teknik Informatika yang bergerak di antara tiga hal: merancang
-                        antarmuka di Figma, membangun produknya dengan React dan Laravel, lalu memastikan semuanya
-                        berjalan stabil setelah rilis.</p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
-                        <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
-                    </div>
-                </div>
-                <div class="hero-media">
-                    <img src="profile.png" alt="Foto profil Inas Lathifah" class="hero-photo">
-                </div>
-            </div>
-        </section>
+    <!-- Home -->
+    <section id="home" class="parallax bg-1">
+        <div class="content">
+            <img src="apple-touch-icon.png" class="img-fluid" alt="Inas Lathifah">
+            <h2>Home</h2>
+            <p>Welcome to my portfolio website! Here you can find information about my abilities, background, and how to
+                contact me.</p>
+        </div>
+    </section>
 
-        <!-- Ability -->
-        <section id="ability" class="section">
-            <div class="container">
-                <h2>Keahlian Teknis</h2>
-                <p class="section-lead">Kombinasi tools yang saya pakai sehari-hari, bahasa pemrograman inti, dan
-                    kemampuan pendukung di luar coding.</p>
-
-                <div class="ability-grid">
-                    <div class="ability-card">
-                        <h3>Technologies</h3>
-                        <ul class="tag-list">
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Laravel</li>
-                            <li>Shadcn/UI</li>
-                            <li>Bootstrap</li>
-                            <li>Figma</li>
-                        </ul>
-                    </div>
-                    <div class="ability-card">
-                        <h3>Bahasa Pemrograman</h3>
-                        <ul class="tag-list">
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Tailwind CSS</li>
-                        </ul>
-                    </div>
-                    <div class="ability-card">
-                        <h3>Lainnya</h3>
-                        <ul class="tag-list">
-                            <li>Algorithms</li>
-                            <li>Data Structures</li>
-                            <li>Computational Complexity</li>
-                            <li>Advance Problem Solving</li>
-                            <li>Reporting</li>
-                            <li>Documentation</li>
-                            <li>Networking</li>
-                        </ul>
-                    </div>
+    <!-- Ability -->
+    <section id="ability" class="normal-section">
+        <div class="container">
+            <h2>Ability</h2>
+            <div class="wraper">
+                <div class="ability">
+                    <h3>Hard Skill</h3>
+                    <ul>
+                        <li>mfkasmnvlk</li>
+                        <li>vzsdgsdgsg</li>
+                        <li>gsdgsgsgsgs</li>
+                        <li>vbzxfdhbgzsghb</li>
+                        <li>zgdfzdfgdbgg</li>
+                        <li>gxdfgzxdfgzdfg</li>
+                    </ul>
+                </div>
+                <div class="ability">
+                    <h3>Soft Skill</h3>
+                    <ul>
+                        <li>bxdfhdh</li>
+                        <li>hdfdhbcvcvb</li>
+                        <li>dhdhcbxcfbdfh</li>
+                        <li>ncnsxhznjhh</li>
+                        <li>bxcbxbhxbhxfg</li>
+                        <li>afrasfraet</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About -->
-        <section id="about" class="section section-alt">
-            <div class="container">
-                <div class="about-text">
-                    <h2>Tentang Saya</h2>
-                    <p>Sarjana Teknik Informatika dengan pengalaman langsung di bidang technical support, system
-                        monitoring, dan incident handling. Teliti dan terstruktur, dengan kemampuan kuat dalam
-                        dokumentasi serta troubleshooting masalah hardware, software, dan jaringan, didukung
-                        pengetahuan dasar web development.</p>
-                    <p>Terbukti mampu menganalisis masalah secara efisien, berkomunikasi dengan jelas, dan
-                        mendukung operasional IT yang stabil.</p>
+    <!-- About -->
+    <section id="about" class="parallax bg-2">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Inas Lathifah, a passionate web developer and designer. I love creating beautiful and
+                functional
+                websites.</p>
+            <div class="gallery">
+                <figure>
+                    <img src="image2.png" alt="project-1" />
+                    <figcaption>
+                        Project 1
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="image.png" alt="project-2" />
+                    <figcaption>
+                        Project 2
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="normal-section">
+        <div class="container">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <div>
+                            <div>
+                                <label for="name">Nama:</label>
+                                <div>
+                                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="email">E-mail:</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="email" id="email" name="email" placeholder="Masukan email Anda"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="alasan">Kritik dan Saran:</label>
+                                <textarea id="alasan" name="alasan" rows="10" cols="100" required></textarea>
+                            </div>
+                    </fieldset>
                 </div>
-            </div>
-        </section>
 
-        <!-- Projects -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Proyek</h2>
-                <p class="section-lead">Dua proyek tim yang saya kerjakan dari sisi UI/UX hingga integrasi desain
-                    ke frontend.</p>
+                <div class="button-group">
+                    <button type="submit" value="Submit"
+                        onclick="return confirm('Apakah Anda yakin ingin mengirimkan form ini?');">Submit</button>
 
-                <div class="project-grid">
-                    <article class="project-card">
-                        <img src="image2.png" alt="Logo Parkify" class="project-logo">
-                        <div class="project-body">
-                            <h3>Parkify</h3>
-                            <p>Berkolaborasi dengan tim Front-End dan Back-End untuk mengembangkan Parkify, aplikasi
-                                yang menjadi satu-satunya platform yang bekerja sama dengan penyedia layanan parkir
-                                di berbagai lokasi seperti gedung, kawasan komersial, dan pusat perbelanjaan. Saya
-                                berkontribusi dalam merancang UI menggunakan Figma, membuat logo Parkify, dan
-                                melakukan UI slicing.</p>
-                            <ul class="tag-list tag-list-small">
-                                <li>React.ts</li>
-                                <li>Tailwind CSS</li>
-                                <li>Vite</li>
-                                <li>Shadcn/UI</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <img src="image.png" alt="Logo PetPal App" class="project-logo">
-                        <div class="project-body">
-                            <h3>PetPal</h3>
-                            <p>Tim kami, terdiri dari anggota Front-End dan Back-End, berkolaborasi mengembangkan
-                                PetPal, platform khusus untuk kebutuhan hewan peliharaan. Aplikasi ini menghadirkan
-                                berbagai fitur yang memudahkan pemilik hewan peliharaan membeli kebutuhan hewan dan
-                                berkonsultasi dengan dokter hewan, baik secara online maupun kunjungan langsung.
-                                Sebagai project leader, saya bertanggung jawab merancang UI di Figma, membuat logo
-                                PetPal, melakukan UI slicing, dan mengintegrasikan desain ke frontend.</p>
-                            <ul class="tag-list tag-list-small">
-                                <li>React.ts</li>
-                                <li>Tailwind CSS</li>
-                                <li>Vite</li>
-                                <li>Shadcn/UI</li>
-                                <li>Leaflet</li>
-                                <li>Figma</li>
-                            </ul>
-                        </div>
-                    </article>
+                    <button type="cancel" value="Cancel"
+                        onclick="return confirm('Apakah Anda yakin ingin mereset form ini?');">Cancel</button>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="section section-alt">
-            <div class="container">
-                <h2>Kontak</h2>
-                <p class="section-lead">Ada pertanyaan, masukan, atau ingin diskusi proyek? Isi form di bawah ini.
-                </p>
-
-                <form action="#" method="post" class="contact-form">
-                    <div class="form-row">
-                        <label for="nama">Nama</label>
-                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
-                    </div>
-
-                    <div class="form-row">
-                        <label for="alasan">Kritik dan Saran</label>
-                        <textarea id="alasan" name="alasan" rows="6" required></textarea>
-                    </div>
-
-                    <div class="button-group">
-                        <button type="submit" class="btn btn-primary">Kirim</button>
-                        <button type="reset" class="btn btn-secondary">Batal</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
+            </form>
+        </div>
+    </section>
 
     <footer id="footer">
-        <p>&copy; 2026 Inas Lathifah. All rights reserved.</p>
+        <div class="">
+            <p>&copy; 2026 Inas Lathifah. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
-        const navToggle = document.getElementById('nav-toggle');
-        const navbar = document.getElementById('navbar');
-
-        navToggle.addEventListener('click', () => {
-            const isOpen = navbar.classList.toggle('is-open');
-            navToggle.setAttribute('aria-expanded', isOpen);
-            navToggle.classList.toggle('is-open', isOpen);
-        });
-
-        navbar.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => {
-                navbar.classList.remove('is-open');
-                navToggle.setAttribute('aria-expanded', 'false');
-                navToggle.classList.remove('is-open');
-            });
-        });
+            
     </script>
 </body>
 
